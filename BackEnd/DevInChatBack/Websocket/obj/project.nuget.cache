@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "CU0xxzTklPEXO37HrmNV1M0a+lrBBgEnCqY1v6+AdxE2X8ZGBezgbiyV9wHuPDPsaOKH8idXu476e5F9nHuFew==",
+  "dgSpecHash": "0edSwrqHKqjvXgGeIrUGPb+lYXsIEECn4fi17zGlT7168+ASvld/aSMRaB6sbqp+/mJPOl5hIa63b8Q/8PbMFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\Websocket\\Websocket.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Computador\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Computador\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\Computador\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Computador\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

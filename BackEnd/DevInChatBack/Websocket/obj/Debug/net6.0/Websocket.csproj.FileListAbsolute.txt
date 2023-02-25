@@ -24,3 +24,6 @@ C:\Users\Computador\Documents\Program\DevInHouse\Módulo 3\DevInChat\BackEnd\Dev
 C:\Users\Computador\Documents\Program\DevInHouse\Módulo 3\DevInChat\BackEnd\DevInChatBack\Websocket\obj\Debug\net6.0\Websocket.pdb
 C:\Users\Computador\Documents\Program\DevInHouse\Módulo 3\DevInChat\BackEnd\DevInChatBack\Websocket\obj\Debug\net6.0\Websocket.genruntimeconfig.cache
 C:\Users\Computador\Documents\Program\DevInHouse\Módulo 3\DevInChat\BackEnd\DevInChatBack\Websocket\obj\Debug\net6.0\ref\Websocket.dll
+C:\Users\Computador\Documents\Program\DevInHouse\Módulo 3\DevInChat\BackEnd\DevInChatBack\Websocket\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\Computador\Documents\Program\DevInHouse\Módulo 3\DevInChat\BackEnd\DevInChatBack\Websocket\obj\Debug\net6.0\Websocket.csproj.CopyComplete
+C:\Users\Computador\Documents\Program\DevInHouse\Módulo 3\DevInChat\BackEnd\DevInChatBack\Websocket\bin\Debug\net6.0\Newtonsoft.Json.dll
