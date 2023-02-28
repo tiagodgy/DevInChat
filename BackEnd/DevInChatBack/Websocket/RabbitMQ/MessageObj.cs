@@ -2,15 +2,15 @@
 {
     public class MessageObj
     {
-        public string Name { get; set; }
-        public string Message { get; set; }
+        public string UserName { get; set; }
+        public string Text { get; set; }
 
         public DateTime Date = DateTime.Now;
 
         public MessageObj(string name, string message)
         {
-            Name = name;
-            Message = message;
+            UserName = name;
+            Text = message;
         }
     }
 }

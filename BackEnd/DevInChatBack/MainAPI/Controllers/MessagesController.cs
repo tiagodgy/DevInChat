@@ -30,6 +30,7 @@ namespace MainApi.Controllers
           }
             var db = _context.Messages;
             var last30Items = db.OrderByDescending(x => x.Id).Take(30).ToList();
+            last30Items.Reverse();
             return Ok(last30Items);
         }
 
@@ -57,7 +58,7 @@ namespace MainApi.Controllers
             {
                 return NotFound();
             }
-
+            last30Messages.Reverse();
             return Ok(last30Messages);
         }
     }

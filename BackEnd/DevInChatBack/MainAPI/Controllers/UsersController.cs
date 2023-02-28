@@ -31,7 +31,7 @@ namespace MainApi.Controllers
 
             var userExists = await _context.Users.AnyAsync(u => u.Name == username);
 
-            return userExists;
+            return Ok(userExists);
         }
 
         [HttpPost]
@@ -44,7 +44,7 @@ namespace MainApi.Controllers
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
+            return Ok(user);
         }
     }
 }
