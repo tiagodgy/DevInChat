@@ -31,7 +31,7 @@ consumer.Received += (model, ea) =>
     var body = ea.Body.ToArray();
     var message = Encoding.UTF8.GetString(body);
     MessageViewModel text = JsonConvert.DeserializeObject<MessageViewModel>(message);
-    Console.WriteLine($"Recebido {text.Message} de {text.Name}.");
+    Console.WriteLine($"Recebido {text.Text} de {text.UserName}.");
     SaveMessage(text);
 
 };
@@ -48,8 +48,8 @@ async Task SaveMessage(MessageViewModel text)
     using var ctx = new WriteAPIContext();
     ctx.Messages.Add(new Message
     {
-        UserName = text.Name,
-        Text = text.Message,
+        UserName = text.UserName,
+        Text = text.Text,
         Date = DateTime.Now
     });
     await ctx.SaveChangesAsync();

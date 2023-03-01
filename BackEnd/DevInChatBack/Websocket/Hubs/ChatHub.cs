@@ -12,5 +12,11 @@ namespace Websocket.Hubs
             MessageObj newMessage = new MessageObj(user, message);
             RabbitConnection.Connect(newMessage);
         }
+
+        public async Task SendReport(int id, string user, string message)
+        {
+            ReportMessageObj newMessage = new ReportMessageObj(id, user, message);
+            RabbitConnection.Report(newMessage);
+        }
     }
 }

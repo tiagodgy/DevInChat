@@ -18,6 +18,8 @@ function App() {
   const messagesEndRef = useRef(null);
   const [search, setSearch] = useState(true);
   const [searchInput, setSearchInput] = useState("");
+  const [reportMenu, setReportMenu] = useState(false);
+  const [reportMenuInfo, setReportMenuInfo] = useState({});
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -131,8 +133,27 @@ function App() {
         }
       }
     };
-    send();
+    if (!search) {
+      send().then(() => {
+        GetLastMessages();
+      });
+      setSearchInput("");
+      setSearch(true);
+    } else {
+      send();
+    }
     setTextInput("");
+  }
+
+  function SendReport(id, user, message) {
+    const send = async () => {
+      try {
+        await saveConnection.current.invoke("SendReport", id, user, message);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    send();
   }
 
   function handleKeyPress(event) {
@@ -146,18 +167,39 @@ function App() {
       <div className="w-11/12 h-full mt-1">
         {messages.map((message, index) => (
           <div key={message + index} className="flex flex-col mb-1">
-            <h3
-              className={
-                username == message.userName
-                  ? "text-sky-600 font-bold"
-                  : "text-orange-500 font-bold"
-              }
-            >
-              <span className="text-neutral-500 mr-1">
-                {message.date ? message.date.slice(11, 16) : "now"}
-              </span>
-              {message.userName}:
-            </h3>
+            <div className="flex flex-row">
+              <h3
+                className={
+                  username == message.userName
+                    ? "text-sky-600 font-bold"
+                    : "text-orange-500 font-bold"
+                }
+              >
+                <span className="text-neutral-500 mr-1">
+                  {message.date ? message.date.slice(11, 16) : "now"}
+                </span>
+                {message.userName}:
+              </h3>
+              {message.id ? (
+                <button
+                  className="ml-auto"
+                  onClick={() => {
+                    setReportMenu(true);
+                    setReportMenuInfo({
+                      id: message.id,
+                      userName: message.userName,
+                      text: message.text,
+                    });
+                  }}
+                >
+                  <h3 className="text-neutral-600 hover:text-red-500">
+                    Report
+                  </h3>
+                </button>
+              ) : (
+                ""
+              )}
+            </div>
             <p className="ml-2 text-neutral-100 flex-wrap break-all">
               {message.text}
             </p>
@@ -166,6 +208,45 @@ function App() {
         <div ref={messagesEndRef} />
       </div>
     );
+  }
+
+  function RenderReportMenu() {
+    if (reportMenu) {
+      return (
+        <div className="absolute bottom-1/2 bg-neutral-900 w-10/12 max-w-md sm:w-96 flex flex-col items-center h-fit rounded-xl">
+          <h3 className="text-neutral-100 mt-3 text-center mx-2">
+            Do you want to report {reportMenuInfo.userName} for following
+            message:
+          </h3>
+          <p className="text-neutral-100 mx-2">"{reportMenuInfo.text}"</p>
+          <div className="flex flex-row mt-3 mb-3 w-full justify-center">
+            <button
+              className="bg-red-600 mr-5 rounded w-4/12 p-1"
+              onClick={() => {
+                SendReport(
+                  reportMenuInfo.id,
+                  reportMenuInfo.userName,
+                  reportMenuInfo.text
+                );
+                setReportMenu(false);
+                setReportMenuInfo({});
+              }}
+            >
+              Confirm
+            </button>
+            <button
+              className="bg-sky-600 rounded w-4/12 p-1"
+              onClick={() => {
+                setReportMenu(false);
+                setReportMenuInfo({});
+              }}
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      );
+    }
   }
 
   useEffect(ConnectWebsocket, []);
@@ -202,6 +283,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center w-full h-screen bg-neutral-800">
+      {RenderReportMenu()}
       <h1 className="text-neutral-100 text-3xl mt-3">DevInChat</h1>
       <h3 className="text-neutral-100 text-md mt-3 text-center max-w-md">
         Anonymously talk with people all over the world. Your current username

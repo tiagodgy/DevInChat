@@ -2,8 +2,8 @@
 {
     public class MessageViewModel
     {
-        public string Name {get; set;}
-        public string Message { get; set; }
+        public string UserName {get; set;}
+        public string Text { get; set; }
         
         public DateTime Date = DateTime.Now;
     }
