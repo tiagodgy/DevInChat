@@ -1,0 +1,435 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\TestProject\\TestProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\AdminConsole\\AdminConsole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\AdminConsole\\AdminConsole.csproj",
+        "projectName": "AdminConsole",
+        "projectPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\AdminConsole\\AdminConsole.csproj",
+        "packagesPath": "C:\\Users\\Computador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\AdminConsole\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\MainAPI\\MainApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\MainAPI\\MainApi.csproj",
+        "projectName": "MainApi",
+        "projectPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\MainAPI\\MainApi.csproj",
+        "packagesPath": "C:\\Users\\Computador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\MainAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\TestProject\\TestProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\TestProject\\TestProject.csproj",
+        "projectName": "TestProject",
+        "projectPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\TestProject\\TestProject.csproj",
+        "packagesPath": "C:\\Users\\Computador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\TestProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\AdminConsole\\AdminConsole.csproj": {
+                "projectPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\AdminConsole\\AdminConsole.csproj"
+              },
+              "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\MainAPI\\MainApi.csproj": {
+                "projectPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\MainAPI\\MainApi.csproj"
+              },
+              "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\Websocket\\Websocket.csproj": {
+                "projectPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\Websocket\\Websocket.csproj"
+              },
+              "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\WriteAPI\\WriteApi.csproj": {
+                "projectPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\WriteAPI\\WriteApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\Websocket\\Websocket.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\Websocket\\Websocket.csproj",
+        "projectName": "Websocket",
+        "projectPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\Websocket\\Websocket.csproj",
+        "packagesPath": "C:\\Users\\Computador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\Websocket\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\WriteAPI\\WriteApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\WriteAPI\\WriteApi.csproj",
+        "projectName": "WriteApi",
+        "projectPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\WriteAPI\\WriteApi.csproj",
+        "packagesPath": "C:\\Users\\Computador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Computador\\Documents\\Program\\DevInHouse\\Módulo 3\\DevInChat\\BackEnd\\DevInChatBack\\WriteAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

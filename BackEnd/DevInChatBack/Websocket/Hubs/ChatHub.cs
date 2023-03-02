@@ -8,6 +8,10 @@ namespace Websocket.Hubs
     {
         public async Task SendMessage(string user, string message)
         {
+            if (message.Length > 280)
+            {
+                throw new Exception("Invalid number of characters");
+            }
             await Clients.All.SendAsync("ReceiveMessage", user, message);
             MessageObj newMessage = new MessageObj(user, message);
             RabbitConnection.Connect(newMessage);
