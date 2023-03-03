@@ -36,12 +36,12 @@ consumer.Received += (model, ea) =>
 
 };
 
-channel.BasicConsume(queue: "websocket",
+while (true)
+{
+    channel.BasicConsume(queue: "websocket",
                         autoAck: true,
                         consumer: consumer);
-
-Console.WriteLine(" Press [enter] to exit.");
-Console.ReadLine();
+}
 
 async Task SaveMessage(MessageViewModel text)
 {
