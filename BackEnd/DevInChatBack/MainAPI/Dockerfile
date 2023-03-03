@@ -11,6 +11,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /app
 COPY --from=build /app ./
 
-EXPOSE 5000
+EXPOSE 7148
 
 ENTRYPOINT ["dotnet", "MainApi.dll"]
