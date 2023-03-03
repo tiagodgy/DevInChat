@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BackEnd",
+    "\\BackEnd\\DevInChatBack",
+    "\\BackEnd\\DevInChatBack\\AdminConsole",
+    "\\BackEnd\\DevInChatBack\\Websocket\\Properties",
+    "\\BackEnd\\DevInChatBack\\WriteAPI",
+    "\\BackEnd\\DevInChatBack\\WriteAPI\\Properties"
+  ],
+  "SelectedNode": "\\BackEnd\\DevInChatBack\\WriteAPI\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}
