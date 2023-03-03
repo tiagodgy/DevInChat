@@ -2,8 +2,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /source
 COPY . .
-RUN dotnet restore "./MainApi/MainApi.csproj" --disable-parallel
-RUN dotnet publish "./MainApi/MainApi.csproj" -c release -o /app --no-restore
+RUN dotnet restore "./MainApi.csproj" --disable-parallel
+RUN dotnet publish "./MainApi.csproj" -c release -o /app --no-restore
 
 
 #Serve Stage
