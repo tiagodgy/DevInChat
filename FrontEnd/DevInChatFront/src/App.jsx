@@ -5,6 +5,8 @@ import {
   adjectives,
   animals,
 } from "unique-names-generator";
+import { API } from "./Services/Api";
+import { Websocket } from "./Services/Websocket";
 
 const imgAutoScroll = "/autoscroll.png";
 const imgNoScroll = "/stopscroll.png";
@@ -35,7 +37,7 @@ function App() {
 
   function SearchMessages() {
     if (search && searchInput != "") {
-      fetch("https://localhost:7148/api/Messages/" + searchInput)
+      fetch(API + "/api/Messages/" + searchInput)
         .then((response) => response.json())
         .then((data) => setMessages(data))
         .catch((error) => console.error("Unable to get items.", error));
@@ -50,7 +52,7 @@ function App() {
   function SaveUserInDatabase(username) {
     var date = new Date();
     var dateEdit = date.toISOString().slice(0, 19).toString();
-    fetch("https://localhost:7148/api/Users", {
+    fetch(API + "/api/Users", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -71,7 +73,7 @@ function App() {
 
   function VerifyUserName(username) {
     var bool;
-    fetch("https://localhost:7148/api/Users/" + username)
+    fetch(API + "/api/Users/" + username)
       .then((response) => response.json())
       .then((data) => (bool = data))
       .catch((error) => console.error("Unable to get items.", error));
@@ -80,7 +82,7 @@ function App() {
   }
 
   function GetLastMessages() {
-    fetch("https://localhost:7148/api/Messages/")
+    fetch(API + "/api/Messages/")
       .then((response) => response.json())
       .then((data) => setMessages(data))
       .catch((error) => console.error("Unable to get items.", error));
@@ -88,7 +90,7 @@ function App() {
 
   function ConnectWebsocket() {
     const connection = new signalR.HubConnectionBuilder()
-      .withUrl("https://localhost:7023/chathub")
+      .withUrl(Websocket + "/chathub")
       .configureLogging(signalR.LogLevel.Information)
       .build();
 
