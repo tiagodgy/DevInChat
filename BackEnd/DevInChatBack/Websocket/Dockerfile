@@ -11,6 +11,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 COPY --from=build /app ./
 
-EXPOSE 5002
+EXPOSE 8281
 
 ENTRYPOINT ["dotnet", "Websocket.dll"]
