@@ -36,13 +36,10 @@ consumer.Received += (model, ea) =>
 
 };
 
-while (true)
-{
-    channel.BasicConsume(queue: "websocket",
+channel.BasicConsume(queue: "websocket",
                         autoAck: true,
                         consumer: consumer);
-}
-
+Console.ReadLine();
 async Task SaveMessage(MessageViewModel text)
 {
     using var ctx = new WriteAPIContext();
