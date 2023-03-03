@@ -31,7 +31,7 @@ consumer.Received += (model, ea) =>
     var body = ea.Body.ToArray();
     var message = Encoding.UTF8.GetString(body);
     MessageViewModel text = JsonConvert.DeserializeObject<MessageViewModel>(message);
-    Console.WriteLine($"Recebido {text.Text} de {text.UserName}.");
+    Console.WriteLine($"Message {text.Text} from {text.UserName}.");
     SaveMessage(text);
 
 };
@@ -39,6 +39,8 @@ consumer.Received += (model, ea) =>
 channel.BasicConsume(queue: "websocket",
                         autoAck: true,
                         consumer: consumer);
+
+Console.WriteLine("Waiting for messages....");
 Console.ReadLine();
 async Task SaveMessage(MessageViewModel text)
 {
