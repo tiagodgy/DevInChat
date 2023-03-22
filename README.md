@@ -4,8 +4,6 @@
 <h3>DevInChat é um aplicativo web para conversas em tempo real. Trata-se de uma única sala para conversas anonimas entre usuários do mundo todo. O objetivo desse projeto foi colocar em prática diversos apredizados do curso DevInHouse do Senai/SC como a criação de APIs em C#, uso de RabbitMQ, React e testes. Além de outras habilidade que eram do meu interesse aprender como Docker e Websockets.</h3>
 <br></br>
 <div align="center">
-<h3><a href="http://192.241.133.135:5173/">Clique aqui para testar!</a></h3>
-<p>http://192.241.133.135:5173/</p>
 </div>
 <hr/>
 <br></br>
